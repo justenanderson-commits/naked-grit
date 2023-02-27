@@ -1,8 +1,12 @@
 import './Header.css'
+import logo from '../../assets/logo.png'
+
 
 const Header = () => {
   return ( 
-    <div>Header Content</div>
+    <div className='header'>
+      <img src={ logo } width='100px' />
+    </div>
    );
 }
  

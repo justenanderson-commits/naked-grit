@@ -6,7 +6,6 @@ import About from '../about/About'
 function App() {
   return (
     <div className="App">
-      App content
       <Header />
       <Main />
       <About />
