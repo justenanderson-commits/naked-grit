@@ -16,8 +16,8 @@
 
 .nav-link-container {
   display: flex;
-  align-items: row;
   margin-right: 10%;
+  
 }
 
 .nav-link {
@@ -26,10 +26,12 @@
   padding: 0;
   text-decoration: none;
   width: 100%;
+  padding-right: 20px;
+
 }
 
 .logo {
-  width: 25%;
+  width: 15%;
 }
 
 .logo-link {
@@ -37,4 +39,8 @@
   justify-content: center;
   flex-direction: column;
   margin-top: -5%;
+}
+
+a {
+  text-decoration: none;
 }
