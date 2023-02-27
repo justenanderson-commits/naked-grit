@@ -1,9 +1,12 @@
 import bison from './bison.png'
+import deer from './deer.png'
+import mtn_lion from './mtn_lion.png'
+import ram from './ram.png'
 
 const prints = [
   {
     id: 1,
-    title: 'Bison with Wild Iris',
+    title: 'Bison and Wild Iris',
     size: '16" x 20"',
     description: 'Giclee print on 1" thick wooden frame',
     price: '$100',
@@ -15,7 +18,7 @@ const prints = [
     size: '16" x 20"',
     description: 'Giclee print on 1" thick wooden frame',
     price: '$100',
-    image: bison 
+    image: deer 
   },
   {
     id: 3,
@@ -23,7 +26,7 @@ const prints = [
     size: '16" x 20"',
     description: 'Giclee print on 1" thick wooden frame',
     price: '$100',
-    image: bison 
+    image: mtn_lion 
   },
   {
     id: 4,
@@ -31,7 +34,7 @@ const prints = [
     size: '16" x 20"',
     description: 'Giclee print on 1" thick wooden frame',
     price: '$100',
-    image: bison 
+    image: ram 
   } 
 ]
 
