@@ -1,0 +1,40 @@
+/* * {
+  border: 1px solid black;
+} */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 9999;
+  height: 20vh;
+  width: 100vw;
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 2%; 
+}
+
+.nav-link-container {
+  display: flex;
+  align-items: row;
+  margin-right: 10%;
+}
+
+.nav-link {
+  display: flex;
+  margin: 3%;
+  padding: 0;
+  text-decoration: none;
+  width: 100%;
+}
+
+.logo {
+  width: 25%;
+}
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -5%;
+}
