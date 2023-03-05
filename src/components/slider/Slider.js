@@ -2,7 +2,7 @@ import slides from '../../assets/slides'
 import { useState } from 'react'
 
 const Slider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(5)
   console.log('Current slide image: ', slides[currentIndex].img)
 
   const sliderStyles = {
@@ -11,13 +11,13 @@ const Slider = () => {
   }
 
   const slideStyles = {
-    border: '2px solid black',
     width: '100%',
     height: '100%',
     borderRadius: '10px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundImage: `url(${slides[currentIndex].img})`
+    backgroundImage: `url(${slides[currentIndex].img})`,
+    marginBottom: '10%'
   }
 
   return (

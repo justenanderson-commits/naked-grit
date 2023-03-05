@@ -8,8 +8,13 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 function App() {
+  const [ articles, setArticles ] = useState([]) 
+
+  // useEffect()
+
   return (
     <div className="App">
       <Router>
