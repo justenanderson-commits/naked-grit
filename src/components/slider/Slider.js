@@ -1,5 +1,13 @@
 import slides from '../../assets/slides'
 import { useState } from 'react'
+// import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
+
+
+// Left off from this video: https://www.youtube.com/watch?v=SK9AlIbexOE&t=334s at 5:56 //
+
+
+
+
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(5)
@@ -19,6 +27,8 @@ const Slider = () => {
     backgroundImage: `url(${slides[currentIndex].img})`,
     marginBottom: '10%'
   }
+
+  
 
   return (
     <div style={ sliderStyles }>
