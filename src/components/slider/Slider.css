@@ -1,0 +1,35 @@
+.dotsContainerStyles {
+  display: flex;
+  justify-content: center;
+}
+
+.dotStyles {
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.sliderStyles {
+    height: 100%;
+    position: relative;
+  }
+
+  .arrowStyles {
+    position: absolute;
+    bottom: 10%;
+    transform: translate(0, -50%);
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+    background: rgb(0,0,0,0.2);
+    border-radius: 3px;
+  }
+
+  .leftArrow {
+    left: 3%;
+  }
+
+  .rightArrow {
+    right: 3%;
+  }

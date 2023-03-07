@@ -1,6 +1,16 @@
 .image-cards-container {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+h2 {
+  margin: 6% auto 0% auto;
+}
+
+.sliderContainer {
+  width: 70vw;
+  height: 50vh;
+  margin: 0 auto;
 }

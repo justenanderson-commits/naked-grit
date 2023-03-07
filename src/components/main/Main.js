@@ -16,15 +16,9 @@ const Main = () => {
     )
   })
 
-  const containerStyles = {
-    width: "400px",
-    height: "200px",
-    margin: "0 auto"
-  }
-
   return (
     <div className="main">
-      <div style={ containerStyles }>
+      <div className='sliderContainer'>
       <Slider />
       </div>
       <h2>Prints</h2>
