@@ -11,8 +11,6 @@ import { useState } from 'react'
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(5)
-  console.log('Current slide image: ', slides[currentIndex].img)
-
   const sliderStyles = {
     height: '100%',
     position: 'relative'
@@ -32,7 +30,7 @@ const Slider = () => {
     position: 'absolute',
     top: '50%',
     transform: 'translate(0, -50%)',
-    left: '32px',
+    left: '3%',
     fontSize: '45px',
     color: 'fff',
     zIndex: 1,
@@ -43,18 +41,29 @@ const Slider = () => {
     position: 'absolute',
     top: '50%',
     transform: 'translate(0, -50%)',
-    right: '32px',
+    right: '3%',
     fontSize: '45px',
     color: 'fff',
     zIndex: 1,
     cursor: 'pointer'
   }
 
+  const goToPrevious= () => {
+    let newIndex
+    currentIndex > 0 ? newIndex = currentIndex - 1 : newIndex = slides.length - 1
+    setCurrentIndex(newIndex)
+  }
+
+  const goToNext= () => {
+    let newIndex
+    currentIndex < slides.length - 1 ? newIndex = currentIndex + 1 : newIndex = 0
+    setCurrentIndex(newIndex)
+  }
+
   return (
     <div style={ sliderStyles }>
-      Image Carousel
-      <div style={leftArrowStyles}>◀</div>
-      <div style={rightArrowStyles}>▶</div>
+      <div style={leftArrowStyles} onClick={goToPrevious}>◀</div>
+      <div style={rightArrowStyles} onClick={goToNext}>▶</div>
       <div style={ slideStyles }></div>
     </div>
   )
