@@ -28,11 +28,33 @@ const Slider = () => {
     marginBottom: '10%'
   }
 
-  
+  const leftArrowStyles = {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translate(0, -50%)',
+    left: '32px',
+    fontSize: '45px',
+    color: 'fff',
+    zIndex: 1,
+    cursor: 'pointer'
+  }
+
+  const rightArrowStyles = {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translate(0, -50%)',
+    right: '32px',
+    fontSize: '45px',
+    color: 'fff',
+    zIndex: 1,
+    cursor: 'pointer'
+  }
 
   return (
     <div style={ sliderStyles }>
       Image Carousel
+      <div style={leftArrowStyles}>◀</div>
+      <div style={rightArrowStyles}>▶</div>
       <div style={ slideStyles }></div>
     </div>
   )
