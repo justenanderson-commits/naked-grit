@@ -6,13 +6,13 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(5)
 
   const slideStyles = {
-    width: '200%',
-    height: '150%',
+    width: '100%',
+    height: '100%',
     borderRadius: '10px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundImage: `url(${slides[currentIndex].img})`,
-    margin: '0% 0% 1% -50%',
+    margin: '0% auto 1% auto',
   }
 
   const goToPrevious = () => {
