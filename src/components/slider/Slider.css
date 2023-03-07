@@ -1,7 +1,6 @@
 .dotsContainerStyles {
   display: flex;
   justify-content: center;
-  margin-top: -7%;
 }
 
 .dotStyles {
@@ -17,10 +16,10 @@
 
   .arrowStyles {
     position: absolute;
-    top: 50%;
+    top: 125%;
     transform: translate(0, -50%);
     font-size: 2em;
-    color: ffffff;
+    color: white;
     z-index: 1;
     cursor: pointer;
   }

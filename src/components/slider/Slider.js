@@ -6,13 +6,13 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(5)
 
   const slideStyles = {
-    width: '100%',
-    height: '100%',
+    width: '200%',
+    height: '150%',
     borderRadius: '10px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundImage: `url(${slides[currentIndex].img})`,
-    marginBottom: '10%',
+    margin: '0% 0% 1% -50%',
   }
 
   const goToPrevious = () => {
@@ -38,17 +38,17 @@ const Slider = () => {
   const showDots = slides.map((slide, slideIndex) => (
     <div
       className="dotStyles"
-      key={slide.Index}
+      key={slideIndex}
       onClick={() => goToSlide(slideIndex)}
     >
-      ⚪️
+        ⏺
     </div>
   ))
 
   return (
     <div className="sliderStyles">
       <div className="arrowStyles leftArrow" onClick={goToPrevious}>
-        ◀
+        &#9664;
       </div>
       <div className="arrowStyles rightArrow" onClick={goToNext}>
         ▶
