@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './Slider.css'
 
 const Slider = () => {
-  const [currentIndex, setCurrentIndex] = useState(5)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const slideStyles = {
     width: '100%',
@@ -12,7 +12,7 @@ const Slider = () => {
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundImage: `url(${slides[currentIndex].img})`,
-    margin: '0% auto 1% auto',
+    margin: '0% auto 1% auto'
   }
 
   const goToPrevious = () => {
@@ -41,7 +41,7 @@ const Slider = () => {
       key={slideIndex}
       onClick={() => goToSlide(slideIndex)}
     >
-        ⏺
+      ⏺
     </div>
   ))
 
