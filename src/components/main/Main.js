@@ -18,12 +18,6 @@ const customStyles = {
   },
 };
 
-// On Main component
-// Add state to Main to track modal open/close state.
-// Add an event listener to each ImageCard.
-// When the image card is clicked, the state will toggle:  const [modalOpen, setModalOpen] = useState(false);
-
-
 
 const Main = () => {
   const [ modalOpen, setModalOpen ] = useState(false)
@@ -53,10 +47,11 @@ const Main = () => {
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        style={customStyles}
+        styles={customStyles}
+        // className='custom-styles'
       >
         {/* <div>Login/Signup</div> */}
-        
+
 
         <button onClick={() => setModalOpen(false)}>Close</button>
       </Modal>
