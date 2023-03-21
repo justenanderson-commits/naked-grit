@@ -55,9 +55,10 @@ const Main = () => {
         onRequestClose={() => setModalOpen(false)}
         style={customStyles}
       >
-        <div>Login/Signup</div>
+        {/* <div>Login/Signup</div> */}
+        
 
-        <button onClick={() => setModalOpen(false)}>Close Modal</button>
+        <button onClick={() => setModalOpen(false)}>Close</button>
       </Modal>
 
     </div>
