@@ -1,8 +1,8 @@
 import './ImageCard.css'
 
-const ImageCard = ({ image, title, description, price }) => {
+const ImageCard = ({ image, title, description, price, setModalOpen }) => {
   return (
-    <div className="image-card">
+    <div className="image-card"         onClick={() => setModalOpen(true) }>
       <img
         src={ image }
         className="print-image"
