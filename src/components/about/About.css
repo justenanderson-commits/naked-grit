@@ -5,10 +5,13 @@
 }
 
 .about-section img {
+  margin: 2%;
   width: 40vw;
 }
 
 .about-paragraph {
+  width: 70vw;
+  text-align: left;
   font-size: 1.2em;
 }
 
