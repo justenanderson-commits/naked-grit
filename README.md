@@ -5,7 +5,6 @@ Summary
 
  - [Deployed Site](TBD)
  - [Front-end repo](https://github.com/justenanderson-commits/naked-grit)
- - [GitHub Project Board](TBD)
 
 ### App Preview
 WIP
