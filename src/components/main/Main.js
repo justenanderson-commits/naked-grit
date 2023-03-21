@@ -2,6 +2,10 @@ import './Main.css'
 import Slider from '../slider/Slider'
 import ImageCard from '../imageCard/ImageCard'
 import prints from '../../assets/prints'
+import Modal from 'react-modal'
+import { useState } from 'react'
+
+
 
 const Main = () => {
   const displayPrints = prints.map((print) => {
