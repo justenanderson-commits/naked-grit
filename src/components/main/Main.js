@@ -5,27 +5,15 @@ import prints from '../../assets/prints'
 import Modal from 'react-modal'
 import { useState } from 'react'
 
-// const customStyles = {
-//   content: {
-//     top: "50%",
-//     left: "50%",
-//     right: "auto",
-//     bottom: "auto",
-//     marginRight: "-50%",
-//     transform: "translate(-50%, -50%)",
-//     backgroundColor: "white",
-//     width: 400,
-//   },
-// };
-
-
 const Main = () => {
   const [ modalOpen, setModalOpen ] = useState(false)
+  const [ modalImage, setModalImage ] = useState(0)
 
-  console.log('Modal is open: ', modalOpen)
   const displayPrints = prints.map((print) => {
     return (
       <ImageCard
+        setModalImage={ setModalImage }
+
         setModalOpen={ setModalOpen }
         image={print.image}
         title={print.title}
@@ -47,8 +35,10 @@ const Main = () => {
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        className='custom-styles'
-      >
+        className='custom-styles' >
+        {/* Need to add alt text attribute here */}
+        // <img src={ modalImage } />
+
         <button onClick={() => setModalOpen(false)}>x</button>
       </Modal>
 
@@ -57,3 +47,5 @@ const Main = () => {
 }
 
 export default Main
+
+
