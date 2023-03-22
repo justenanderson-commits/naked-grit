@@ -35,11 +35,11 @@ const Main = () => {
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        className='custom-styles' >
+        className='modal' >
         {/* Need to add alt text attribute here */}
-        // <img src={ modalImage } />
+        <img src={ modalImage } />
 
-        <button onClick={() => setModalOpen(false)}>x</button>
+        <button onClick={() => setModalOpen(false)}>Close</button>
       </Modal>
 
     </div>

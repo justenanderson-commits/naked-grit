@@ -13,7 +13,7 @@ const ImageCard = ({
       className="image-card"
       onClick={(event) => {
         setModalOpen(true)
-        setModalImage(event.target.currentSrc)
+        setModalImage(event.target.currentSrc)  
       }}
     >
       <img src={image} className="print-image" alt={description} />
