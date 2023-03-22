@@ -5,18 +5,18 @@ import prints from '../../assets/prints'
 import Modal from 'react-modal'
 import { useState } from 'react'
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    backgroundColor: "white",
-    width: 400,
-  },
-};
+// const customStyles = {
+//   content: {
+//     top: "50%",
+//     left: "50%",
+//     right: "auto",
+//     bottom: "auto",
+//     marginRight: "-50%",
+//     transform: "translate(-50%, -50%)",
+//     backgroundColor: "white",
+//     width: 400,
+//   },
+// };
 
 
 const Main = () => {
@@ -47,13 +47,9 @@ const Main = () => {
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        styles={customStyles}
-        // className='custom-styles'
+        className='custom-styles'
       >
-        {/* <div>Login/Signup</div> */}
-
-
-        <button onClick={() => setModalOpen(false)}>Close</button>
+        <button onClick={() => setModalOpen(false)}>x</button>
       </Modal>
 
     </div>
